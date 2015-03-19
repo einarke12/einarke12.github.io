@@ -1,0 +1,127 @@
+<!doctype html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Spaaace</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div class = "keybinds">
+            <table style="width:300px">
+                <tr>
+                  <td class = "keyaction">Jump</td> 
+                  <td class = "keybind">SPACE</td>
+                </tr>
+                <tr>
+                  <td class = "keyaction">Mute Sounds</td> 
+                  <td class = "keybind">N</td>
+                </tr>
+                <tr>
+                  <td class = "keyaction">Mute Music</td> 
+                  <td class = "keybind">M</td>
+                </tr>
+                <tr>
+                  <td class = "keyaction">Music Volume</td> 
+                  <td class = "keybind">U/I</td>
+                </tr>
+                <tr>
+                  <td class = "keyaction">Sound Volume</td> 
+                  <td class = "keybind">J/K</td>
+                </tr>
+                
+                </table>
+        </div>
+
+        <div class="GameCanvas">
+            <div class="clouds">
+                <div class="cloud1"></div>
+                <div class="cloud2"></div>
+                <div class="cloud3"></div>
+            </div>
+            <div class = "Pipes">
+                <div class ="leftPipe">
+                
+                    <div class = "PipeTop"><img src="images/floor.png" alt=""></div>
+                    <div class = "Gap"></div>
+                    <div class = "PipeBottom"><img src="images/floor.png" alt=""></div>
+                    
+                </div>
+
+                <div class ="rightPipe">
+                
+                    <div class = "PipeTop"><img src="images/floor.png" alt=""></div>
+                    <div class = "Gap"></div>
+                    <div class = "PipeBottom"><img src="images/floor.png" alt=""></div>
+                    
+                </div>
+            </div>
+
+            <div class="Player"></div>
+            <div class="floor"></div>
+
+            <div class="Scoreboard">
+                <div class='Score-text'>SCORE</div>
+                <div class="Score">0</div>
+                <div class='highscore-text'></div>
+                <div class='highscore'></div>
+                <button class="Scoreboard-restart">
+                    <span class="Scoreboard-restartText">RESTART</span>
+                </button>
+            </div>
+        </div>
+
+        <div class = "scoredisplay" align="center">
+        0
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/controls.js"></script>
+        <script src="scripts/world.js"></script>
+        <script src="scripts/audio.js"></script>
+        <script src="scripts/game.js"></script>
+
+        <script src="scripts/player.js"></script>
+        <script src="scripts/utils.js"></script>
+        <!-- endbuild -->
+
+        <audio preload class = "background" >
+            <source src = "media/background.mp3" type ="audio/mpeg">
+
+        </audio>
+
+        <audio preload class = "gameover soundeffect"> <source src = "media/dead/gameover0.wav" type ="audio/mpeg">  </audio>
+        <audio preload class = "gameover soundeffect"> <source src = "media/dead/gameover1.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "gameover soundeffect"> <source src = "media/dead/gameover2.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "gameover soundeffect"> <source src = "media/dead/gameover3.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "gameover soundeffect"> <source src = "media/dead/gameover4.wav" type ="audio/mpeg"> </audio>
+             
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score1.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score2.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score3.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score4.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score5.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "scoresound soundeffect">  <source src = "media/score/score6.wav" type ="audio/mpeg"> </audio>
+
+
+        <audio preload class = "jump soundeffect"> <source src = "media/jump/jump1.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "jump soundeffect"> <source src = "media/jump/jump2.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "jump soundeffect"> <source src = "media/jump/jump3.wav" type ="audio/mpeg"> </audio>
+        <audio preload class = "jump soundeffect"> <source src = "media/jump/jump4.wav" type ="audio/mpeg"> </audio>
+            
+        
+</body>
+</html>
